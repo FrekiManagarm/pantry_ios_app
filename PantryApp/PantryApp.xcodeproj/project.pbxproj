@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		017397F42A2132BD005E23DF /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017397F32A2132BD005E23DF /* ApiManager.swift */; };
+		017397F72A213586005E23DF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017397F62A213586005E23DF /* AppState.swift */; };
 		5F8195872A1D055300C06B32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8195862A1D055300C06B32 /* HomeView.swift */; };
 		5F8195892A1D055F00C06B32 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8195882A1D055F00C06B32 /* HomeViewModel.swift */; };
 		5F81958B2A1D058E00C06B32 /* PhotoDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F81958A2A1D058E00C06B32 /* PhotoDeviceManager.swift */; };
@@ -24,9 +26,12 @@
 		5FCB18522A0A9B0B00B968FE /* PantryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB18512A0A9B0B00B968FE /* PantryApp.swift */; };
 		5FCB18562A0A9B0C00B968FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB18552A0A9B0C00B968FE /* Assets.xcassets */; };
 		5FCB18592A0A9B0C00B968FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB18582A0A9B0C00B968FE /* Preview Assets.xcassets */; };
+		CFE3A0A9331BD835B6AABCF0 /* Pods_PantryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88A75BE8893B11C8F65F532 /* Pods_PantryApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		017397F32A2132BD005E23DF /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		017397F62A213586005E23DF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5F8195862A1D055300C06B32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5F8195882A1D055F00C06B32 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		5F81958A2A1D058E00C06B32 /* PhotoDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDeviceManager.swift; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 		5FCB18512A0A9B0B00B968FE /* PantryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryApp.swift; sourceTree = "<group>"; };
 		5FCB18552A0A9B0C00B968FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FCB18582A0A9B0C00B968FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61BF353BB927D871E2648BF0 /* Pods-PantryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp.debug.xcconfig"; path = "Target Support Files/Pods-PantryApp/Pods-PantryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8A34A48BE632B10B6020701E /* Pods-PantryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PantryApp.release.xcconfig"; path = "Target Support Files/Pods-PantryApp/Pods-PantryApp.release.xcconfig"; sourceTree = "<group>"; };
+		E88A75BE8893B11C8F65F532 /* Pods_PantryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PantryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +60,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE3A0A9331BD835B6AABCF0 /* Pods_PantryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017397F52A213570005E23DF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				017397F62A213586005E23DF /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		5F81957C2A1D048A00C06B32 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5F81958A2A1D058E00C06B32 /* PhotoDeviceManager.swift */,
+				017397F32A2132BD005E23DF /* ApiManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -241,6 +259,8 @@
 			children = (
 				5FCB18502A0A9B0B00B968FE /* PantryApp */,
 				5FCB184F2A0A9B0B00B968FE /* Products */,
+				746D35901F1493CCE93E951F /* Pods */,
+				8BB14F3B9363D2C8D8C89BA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,6 +275,7 @@
 		5FCB18502A0A9B0B00B968FE /* PantryApp */ = {
 			isa = PBXGroup;
 			children = (
+				017397F52A213570005E23DF /* State */,
 				5F81957F2A1D04A600C06B32 /* App */,
 				5F81957E2A1D049B00C06B32 /* Extensions */,
 				5F81957D2A1D049200C06B32 /* Managers */,
@@ -274,6 +295,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		746D35901F1493CCE93E951F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61BF353BB927D871E2648BF0 /* Pods-PantryApp.debug.xcconfig */,
+				8A34A48BE632B10B6020701E /* Pods-PantryApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8BB14F3B9363D2C8D8C89BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E88A75BE8893B11C8F65F532 /* Pods_PantryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,9 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FCB185C2A0A9B0C00B968FE /* Build configuration list for PBXNativeTarget "PantryApp" */;
 			buildPhases = (
+				FFFE82D8EAE91D98FF7EE9DA /* [CP] Check Pods Manifest.lock */,
 				5FCB184A2A0A9B0B00B968FE /* Sources */,
 				5FCB184B2A0A9B0B00B968FE /* Frameworks */,
 				5FCB184C2A0A9B0B00B968FE /* Resources */,
+				F3B1F90ACFC221880D259D2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,16 +380,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3B1F90ACFC221880D259D2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PantryApp/Pods-PantryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFE82D8EAE91D98FF7EE9DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PantryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FCB184A2A0A9B0B00B968FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017397F42A2132BD005E23DF /* ApiManager.swift in Sources */,
 				5F8195A22A1D068300C06B32 /* HomeWidget.swift in Sources */,
 				5F81958B2A1D058E00C06B32 /* PhotoDeviceManager.swift in Sources */,
 				5F8195872A1D055300C06B32 /* HomeView.swift in Sources */,
 				5F8195972A1D060100C06B32 /* RegisterViewModel.swift in Sources */,
 				5FCB18522A0A9B0B00B968FE /* PantryApp.swift in Sources */,
+				017397F72A213586005E23DF /* AppState.swift in Sources */,
 				5F8195932A1D05DA00C06B32 /* RegisterView.swift in Sources */,
 				5F81958D2A1D059F00C06B32 /* Pantry.swift in Sources */,
 				5F8195992A1D062700C06B32 /* LoginView.swift in Sources */,
@@ -481,6 +566,7 @@
 		};
 		5FCB185D2A0A9B0C00B968FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BF353BB927D871E2648BF0 /* Pods-PantryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,6 +596,7 @@
 		};
 		5FCB185E2A0A9B0C00B968FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A34A48BE632B10B6020701E /* Pods-PantryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

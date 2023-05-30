@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PantryAppApp: App {
+    
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(appState)
         }
     }
 }

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class OnBoardingViewModel: NSObject, ObservableObject {
+    
+}

@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Pantry: Decodable, Encodable {
+struct Pantry: Codable {
     
 }
